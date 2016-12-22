@@ -3,6 +3,8 @@ var Generator = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var _ = require('lodash');
+var path = require('path');
+var mkdirp = require('mkdirp');
 
 module.exports = Generator.extend({
   prompting: function () {
@@ -63,6 +65,13 @@ module.exports = Generator.extend({
     this.fs.write(this.destinationPath('README.md'), readmeTmpl({
       project_name: this.props.projectName,
       project_license: this.props.projectLicense,
+      project_author: this.props.projectAuthor
+    }));
+
+    var readmeTmpl2 = _.template(this.fs.read(this.templatePath('./package.json')));
+    this.fs.write(this.destinationPath('package.json'), readmeTmpl2({
+      project_name: this.props.projectName,
+      project_desc: this.props.projectDesc,
       project_author: this.props.projectAuthor
     }));
 

@@ -1,4 +1,4 @@
-# generator-fullstack-vue [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] 
+# generator-fullstack-vue [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > Scaffold out a Fullstack Vuejs project:vue2;vuex;vue-router;vue-resource;express;mongo
 
 ## Installation
