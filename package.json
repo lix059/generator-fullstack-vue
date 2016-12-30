@@ -1,6 +1,6 @@
 {
   "name": "generator-fullstack-vue",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Scaffold out a Fullstack Vuejs project:vue2;vuex;vue-router;vue-resource;express;mongo",
   "homepage": "https://github.com/lix059/generator-fullstack-vue",
   "author": {
