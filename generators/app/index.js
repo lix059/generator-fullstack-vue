@@ -101,10 +101,6 @@ module.exports = Generator.extend({
         this.destinationPath('.eslintrc.js')
     );
     this.fs.copy(
-      this.templatePath('.gitignore'),
-      this.destinationPath('.gitignore')
-    );
-    this.fs.copy(
       this.templatePath('dump.rdb'),
       this.destinationPath('dump.rdb')
     );
