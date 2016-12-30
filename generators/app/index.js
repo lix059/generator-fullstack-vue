@@ -84,6 +84,30 @@ module.exports = Generator.extend({
         this.templatePath('index.html'),
         this.destinationPath('index.html')
     );
+    this.fs.copy(
+        this.templatePath('.babelrc'),
+        this.destinationPath('.babelrc')
+    );
+    this.fs.copy(
+        this.templatePath('.editorconfig'),
+        this.destinationPath('.editorconfig')
+    );
+    this.fs.copy(
+        this.templatePath('.eslintignore'),
+        this.destinationPath('.eslintignore')
+    );
+    this.fs.copy(
+        this.templatePath('.eslintrc.js'),
+        this.destinationPath('.eslintrc.js')
+    );
+    this.fs.copy(
+      this.templatePath('.gitignore'),
+      this.destinationPath('.gitignore')
+    );
+    this.fs.copy(
+      this.templatePath('dump.rdb'),
+      this.destinationPath('dump.rdb')
+    );
 
     this.fs.copy(
         this.templatePath('build/'),
