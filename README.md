@@ -26,6 +26,7 @@ yo fullstack-vue
 
 
 ## About this web project
+https://github.com/lix059/generator-fullstack-vue
 
 # a fullstack web project, use vue2.0 + vue-router + vuex + vue-router + express
 
@@ -69,8 +70,7 @@ FE & BE
     
     when you are developing both side, you can anntate mockjs in src/main.js, and
     config the request url in  config/index.js  proxyTable 
-
-
+ ```   
 
 ## License
 
